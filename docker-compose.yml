@@ -3,7 +3,7 @@ version: '3'
 services:
   http_server:
     image: python:latest
-    command: python -m http.server 12345
+    command: python /app/server.py
     ports:
       - "12345:12345"  # Adjust port if needed
     volumes:
